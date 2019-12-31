@@ -1,0 +1,11 @@
+{
+  "name": "neo-app",
+  "version": "1.0.0",
+  "description": "React.js app showcasing NEOs form NASA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Bourhil",
+  "license": "WTFPL"
+}
