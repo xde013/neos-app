@@ -6,13 +6,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
+import HomePage from 'containers/HomePage/Loadable';
+import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import GlobalStyle from '../../global-styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import HomePage from '../HomePage';
 
 const AboutPage = () => <span> About page </span>;
-const NotFoundPage = () => <span> Not found page</span>;
 
 export default function App() {
   return (

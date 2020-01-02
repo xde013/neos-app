@@ -71,11 +71,9 @@ const mapStateToProps = createStructuredSelector({
   error: makeSelectError(),
 });
 
-export function mapDispatchToProps(dispatch) {
-  return {
-    loadNeos: () => dispatch(loadNeosAction()),
-  };
-}
+export const mapDispatchToProps = dispatch => ({
+  loadNeos: () => dispatch(loadNeosAction()),
+});
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
