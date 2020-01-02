@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrbitSelect /> Should render and match the snapshot 1`] = `
+<div
+  class="MuiFormControl-root makeStyles-formControl-74"
+>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+  >
+    <div
+      aria-haspopup="listbox"
+      aria-labelledby="demo-simple-select-placeholder-label-label demo-simple-select-placeholder-label"
+      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+      id="demo-simple-select-placeholder-label"
+      role="button"
+      tabindex="0"
+    >
+      <em>
+        All
+      </em>
+    </div>
+    <input
+      type="hidden"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-137 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-138"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+  <p
+    class="MuiFormHelperText-root MuiFormHelperText-contained"
+  >
+    Filter by Orbit
+  </p>
+</div>
+`;

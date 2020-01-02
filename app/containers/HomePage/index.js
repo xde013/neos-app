@@ -18,7 +18,7 @@ import { loadNeos as loadNeosAction } from '../App/actions';
 import saga from './saga';
 import { makeSelectNeosFormatted } from './selectors';
 import NeosChart from '../../components/NeosChart';
-
+import OrbitSelect from '../OrbitSelect';
 const key = 'home';
 
 export function HomePage({ neos, loadNeos }) {
@@ -45,6 +45,9 @@ export function HomePage({ neos, loadNeos }) {
             <Typography variant="h4" gutterBottom>
               Discover NEOs | <em> Near Earth Objects </em>
             </Typography>
+          </Grid>
+          <Grid item>
+            <OrbitSelect />
           </Grid>
         </Grid>
       </Grid>
