@@ -19,11 +19,14 @@ import saga from './saga';
 import { makeSelectNeosFormatted } from './selectors';
 import NeosChart from '../../components/NeosChart';
 import OrbitSelect from '../OrbitSelect';
+import ViewToggleButton from '../../components/ViewToggleButton';
+import NeosTable from '../../components/NeosTable';
+
 const key = 'home';
 
 export function HomePage({ neos, loadNeos }) {
   useInjectSaga({ key, saga });
-
+  const [tableView, settableView] = React.useState(false);
   useEffect(() => {
     loadNeos();
   }, []);
@@ -42,6 +45,9 @@ export function HomePage({ neos, loadNeos }) {
           alignItems="center"
         >
           <Grid item>
+            <ViewToggleButton toggleHandler={settableView} />
+          </Grid>
+          <Grid item>
             <Typography variant="h4" gutterBottom>
               Discover NEOs | <em> Near Earth Objects </em>
             </Typography>
@@ -51,9 +57,14 @@ export function HomePage({ neos, loadNeos }) {
           </Grid>
         </Grid>
       </Grid>
-      <Grow in>
-        <Grid item xs={12}>
+      <Grow in={!tableView}>
+        <Grid item xs={12} hidden={tableView}>
           <NeosChart neos={neos} />
+        </Grid>
+      </Grow>
+      <Grow in={tableView}>
+        <Grid item xs={12} hidden={!tableView}>
+          <NeosTable neos={neos} />
         </Grid>
       </Grow>
     </Grid>
