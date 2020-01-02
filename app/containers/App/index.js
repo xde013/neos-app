@@ -9,11 +9,10 @@ import Container from '@material-ui/core/Container';
 import GlobalStyle from '../../global-styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import HomePage from '../HomePage';
 
-const HomePage = () => <span> Home page </span>
-const AboutPage = () => <span> About page </span>
-const NotFoundPage = () => <span> Not found page</span>
-
+const AboutPage = () => <span> About page </span>;
+const NotFoundPage = () => <span> Not found page</span>;
 
 export default function App() {
   return (
@@ -22,7 +21,7 @@ export default function App() {
         titleTemplate="%s - NEOs Nasa"
         defaultTitle="Near Earth Object by Ryan Bourhil"
       >
-        <meta 
+        <meta
           name="description"
           content="A React.js project showcasing Near Earth Objects"
         />
