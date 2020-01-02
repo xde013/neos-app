@@ -7,12 +7,13 @@ import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import GlobalStyle from '../../global-styles';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const HomePage = () => <span> Home page </span>
 const AboutPage = () => <span> About page </span>
 const NotFoundPage = () => <span> Not found page</span>
-const Header = () => <span> Header </span>
-const Footer = () => <span> Footer </span>
+
 
 export default function App() {
   return (

@@ -18,7 +18,7 @@
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/",
     "lint:eslint:fix": "eslint --fix --ignore-path .gitignore  --ignore-pattern internals/",
     "lint:js": "npm run lint:eslint -- . ",
-    "lint:staged": "lint-staged"
+    "lint:staged": "npm run lint:eslint:fix"
   },
   "browserslist": [
     "last 2 versions",
