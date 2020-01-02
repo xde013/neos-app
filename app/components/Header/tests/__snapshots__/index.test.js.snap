@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+>
+  <div
+    class="MuiBox-root MuiBox-root-105"
+  >
+    <a
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-outlinedSizeLarge MuiButton-sizeLarge"
+      data-testid="home"
+      href="/"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Home
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div
+    class="MuiBox-root MuiBox-root-138"
+  >
+    <a
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-outlinedSizeLarge MuiButton-sizeLarge"
+      data-testid="about"
+      href="/about"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        About
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> should render and match the snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+  style="margin-bottom: 50px;"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom"
+        >
+          Discover NEOs | 
+          <em>
+             Near Earth Objects 
+          </em>
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+    style="opacity: 1; transform: scale(1, 1); transition: opacity 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+  >
+    <div
+      class="LoadingIndicator__Wrapper-c3cbkl-0 cnqvsL"
+    >
+      <div
+        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 40px; height: 40px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20.2"
+            stroke-width="3.6"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;

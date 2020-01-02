@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render and match the snapshot 1`] = `
+<ForwardRef(WithStyles)>
+  <HelmetWrapper
+    defaultTitle="Near Earth Object by Ryan Bourhil"
+    defer={true}
+    encodeSpecialCharacters={true}
+    titleTemplate="%s - NEOs Nasa"
+  >
+    <meta
+      content="A React.js project showcasing Near Earth Objects"
+      name="description"
+    />
+  </HelmetWrapper>
+  <Header />
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "compare": null,
+          "displayName": "Connect(Component)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/about"
+    />
+    <Route
+      component={[Function]}
+      path=""
+    />
+  </Switch>
+  <Footer />
+  <GlobalStyleComponent />
+</ForwardRef(WithStyles)>
+`;

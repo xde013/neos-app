@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render and match the snapshot 1`] = `
+<div
+  className="MuiGrid-root makeStyles-root-1 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body2"
+  >
+    This Project is under Do What TheFuck You Want to Public License.
+  </p>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle2"
+  >
+    Made with
+     
+    <span
+      aria-label="heart"
+      role="img"
+    >
+      💖
+    </span>
+     
+    by Ryan Bourhil
+  </h6>
+</div>
+`;
