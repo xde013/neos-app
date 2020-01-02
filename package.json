@@ -13,12 +13,14 @@
     "start": "cross-env NODE_ENV=development node server",
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
     "start:production": "npm run test && npm run build && npm run start:prod",
+    "start:prod": "cross-env NODE_ENV=production node server",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint app/**/*.js",
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/",
     "lint:eslint:fix": "eslint --fix --ignore-path .gitignore  --ignore-pattern internals/",
     "lint:js": "npm run lint:eslint -- .",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "test": "cross-env NODE_ENV=test jest -u -b 3 --colors --coverage"
   },
   "browserslist": [
     "last 2 versions",
