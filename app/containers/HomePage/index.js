@@ -12,9 +12,12 @@ import PropTypes from 'prop-types';
 import { useInjectSaga } from 'utils/injectSaga';
 import { makeSelectLoading, makeSelectError } from 'containers/App/selectors';
 import Grid from '@material-ui/core/Grid';
+import Grow from '@material-ui/core/Grow';
+import Typography from '@material-ui/core/Typography';
 import { loadNeos as loadNeosAction } from '../App/actions';
 import saga from './saga';
 import { makeSelectNeosFormatted } from './selectors';
+import NeosChart from '../../components/NeosChart';
 
 const key = 'home';
 
@@ -31,7 +34,25 @@ export function HomePage({ neos, loadNeos }) {
         <title>Home Page</title>
         <meta name="description" content="homepage" />
       </Helmet>
-      {JSON.stringify(neos)}
+      <Grid item xs={12}>
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignItems="center"
+        >
+          <Grid item>
+            <Typography variant="h4" gutterBottom>
+              Discover NEOs | <em> Near Earth Objects </em>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grow in>
+        <Grid item xs={12}>
+          <NeosChart neos={neos} />
+        </Grid>
+      </Grow>
     </Grid>
   );
 }
