@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutPage /> should render its heading 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  style="height: 75vh;"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-outlined"
+      style="background: rgb(229, 229, 229);"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-133"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
+        >
+          About 
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+            />
+          </svg>
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          This is a test project made with React showcasing
+           
+          <button
+            class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiLink-button MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            NEOs (Near Earth Objects)
+          </button>
+           
+          data provided by
+          <em>
+             NASA
+          </em>
+          .
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

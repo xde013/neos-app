@@ -11,8 +11,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import GlobalStyle from '../../global-styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
-const AboutPage = () => <span> About page </span>;
+import AboutPage from '../AboutPage/Loadable';
 
 export default function App() {
   return (
