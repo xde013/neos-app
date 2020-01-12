@@ -7,7 +7,7 @@ import { put, takeLatest } from 'redux-saga/effects';
 import { LOAD_NEOS } from 'containers/App/constants';
 import { neosLoaded, neosLoadingError } from 'containers/App/actions';
 
-import githubData, { getNeos } from '../saga';
+import neosData, { getNeos } from '../saga';
 
 /* eslint-disable redux-saga/yield-effects */
 describe('getNeos Saga', () => {
@@ -44,11 +44,11 @@ describe('getNeos Saga', () => {
   });
 });
 
-describe('githubDataSaga Saga', () => {
-  const githubDataSaga = githubData();
+describe('neosDataSaga Saga', () => {
+  const neosDataSaga = neosData();
 
   it('should start task to watch for LOAD_Neos action', () => {
-    const takeLatestDescriptor = githubDataSaga.next().value;
+    const takeLatestDescriptor = neosDataSaga.next().value;
     expect(takeLatestDescriptor).toEqual(takeLatest(LOAD_NEOS, getNeos));
   });
 });
